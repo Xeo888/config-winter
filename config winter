@@ -139,7 +139,7 @@ _G.FishItConfig = _G.FishItConfig or {
     ["Disable3DRender"] = true,
     ["AutoRemovePlayer"] = true,
 
-    ["AutoReconnect"] = true,
+    ["AutoReconnect"] = false,
     ["HideGUI"] = false,
     ["Debug"] = false,
     ["EXIT_MAP_IF_DISCONNECT"] = false,
