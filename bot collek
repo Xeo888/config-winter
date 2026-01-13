@@ -12,7 +12,7 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Auto Accept Trade"] = true,
     },
     ["Auto Trade"] = {
-        ["Enabled"] = false,
+        ["Enabled"] = true,
         ["Whitelist Username"] = {"xeostockk"},
         ["Category Fish"] = {
             "Secret",
@@ -31,7 +31,7 @@ _G.FishItConfig = _G.FishItConfig or {
     ["Selling"] = {
         ["Auto Sell"] = true,
         ["Auto Sell Threshold"] = "Legendary",
-        ["Auto Sell Every"] = 100,
+        ["Auto Sell Every"] = 10,
     },
     ["Doing Quest"] = {
         ["Auto Ghostfinn Rod"] = true,
