@@ -61,11 +61,11 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Minimum Rod"] = "Astral Rod",
     },
     ["WebHook"] = {
-        ["Link Webhook"] = "",
-        ["Auto Sending"] = false,
+        ["Link Webhook"] = "https://discord.com/api/webhooks/1100703248844857445/gXPv4GXLGoplwYUOPFc_lg4YBBAWX---abKRZFWBKDSkkM9Hi1AQbNegii_zgmY_EMe9",
+        ["Auto Sending"] = true,
         ["Category"] = {"Secret"},
 
-        ["Link Webhook Quest Complete"] = "",
+        ["Link Webhook Quest Complete"] = "https://discord.com/api/webhooks/1224262421376405594/37bRNAsOPkUUqHROjVw-zRHzus-Zvf23RDod3Bv3Z5SHFRhF2u9a1REq1zUcrYmB_BI6",
     },
     ["Weather"] = {
         ["Auto Buying"] = true,
