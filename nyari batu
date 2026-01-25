@@ -1,25 +1,32 @@
-
 _G.FishItConfig = _G.FishItConfig or {
     ["Fishing"] = {
         ["Auto Perfect"] = false,
-        ["Random Result"] = true,
+        ["Random Result"] = false,
+
         ["Auto Favorite"] = true,
+        ["Auto Unfavorite"] = false,
         ["Fish Name"] = {
             "Sacred Guardian Squid",
             {Name = "Ruby", Variant = "Gemstone"},
+            -- {Variant = "Leviathan Rage"}, -- Variant Only
+            -- {Tier = "Secret", Variant = "Leviathan Rage"},  -- Tier + Variant
         },
+
         ["Auto Accept Trade"] = true,
+        ["Auto Friend Request"] = false,
     },
     ["Auto Trade"] = {
         ["Enabled"] = true,
         ["Whitelist Username"] = {"xeostock","xeostock1","xeostock2","xeostock3","xeostock5"},
         ["Category Fish"] = {
             "Secret",
-        
+            -- {Tier = "Mythic", Variant = "Stone"}, -- Tier + Variant
         },
         ["Fish Name"] = {
             "Sacred Guardian Squid",
             {Name = "Ruby", Variant = "Gemstone"},
+            {Variant = "Leviathan Rage"},   
+            -- {Variant = "Leviathan Rage"}, -- Variant Only
         },
         ["Item Name"] = {
             "Evolved Enchant Stone",
@@ -36,9 +43,16 @@ _G.FishItConfig = _G.FishItConfig or {
     },
     ["Doing Quest"] = {
         ["Auto Ghostfinn Rod"] = true,
-        ["Auto Element Rod"] = false,
+        ["Auto Element Rod"] = true,
+        ["Auto Diamond Rod"] = false,
         ["Unlock Ancient Ruin"] = true,
         ["Allowed Sacrifice"] = {
+            "Ghost Shark",
+            "Cryoshade Glider",
+            "Panther Eel",
+            "Queen Crab",
+            "King Crab",
+            "Giant Squid",
             "Blob Shark",
             "Ghost Shark",
         },
@@ -47,11 +61,11 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Minimum Rod"] = "Astral Rod",
     },
     ["WebHook"] = {
-        ["Link Webhook"] = "https://discord.com/api/webhooks/1100703248844857445/gXPv4GXLGoplwYUOPFc_lg4YBBAWX---abKRZFWBKDSkkM9Hi1AQbNegii_zgmY_EMe9",
-        ["Auto Sending"] = true,
+        ["Link Webhook"] = "",
+        ["Auto Sending"] = false,
         ["Category"] = {"Secret"},
 
-        ["Link Webhook Quest Complete"] = "https://discord.com/api/webhooks/1100703248844857445/gXPv4GXLGoplwYUOPFc_lg4YBBAWX---abKRZFWBKDSkkM9Hi1AQbNegii_zgmY_EMe9",
+        ["Link Webhook Quest Complete"] = "",
     },
     ["Weather"] = {
         ["Auto Buying"] = true,
@@ -61,7 +75,6 @@ _G.FishItConfig = _G.FishItConfig or {
             "Cloudy",
             "Storm",
             "Radiant",
-            "Snow",
         },
     },
     ["Potions"] = {
@@ -72,7 +85,7 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Auto Use"] = true,
         ["Minimum Rod"] = "Ghostfinn Rod",
         ["Buy List"] = {
-            "Luck Totem",
+            ["Luck Totem"] = 5,
             "Mutation Totem",
             "Shiny Totem",
         },
@@ -81,20 +94,24 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Start Farm"] = false,
         ["Minimum Rod"] = "Ghostfinn Rod",
         ["Event List"] = {
-            ["Christmas Cave"] = false,
-            ["Hacker Event"] = false,
             "Megalodon Hunt",
             "Ghost Shark Hunt",
             "Shark Hunt",
+            -- ["Ancient Lochness Monster"] = true,
         },
     },
     ["Enchant"] = {
         ["Auto Enchant"] = true,
-        ["Roll Enchant"] = true, -- true = Roll until get TOP 1 enchant only (first in list)
-        ["Evolved Roll Enchant"] = false, -- true = Roll Evolved Stone until get ANY evolved-only enchant from list, then fallback to regular stone
+        ["Roll Enchant"] = true,
+        ["Evolved Roll Enchant"] = false,
         ["Enchant List"] = {
+            "Reeler II",
+            "SECRET Hunter",
+            "Shark Hunter",
+            "Mutation Hunter III",
+            "Leprechaun II",
             "Mutation Hunter II",
-            "Reeler I",
+            "Prismatic I",
         },
         ["Second Enchant"] = false,
         ["Allowed Sacrifice"] = {
@@ -117,6 +134,7 @@ _G.FishItConfig = _G.FishItConfig or {
             "Aether Bait",
             "Singularity Bait",
         },
+        ["Endgame"] = "",
     },
     ["Rod List"] = {
         ["Auto Buying"] = true,
@@ -124,14 +142,16 @@ _G.FishItConfig = _G.FishItConfig or {
             "Grass Rod",
             "Midnight Rod",
             "Astral Rod",
-            "Ares Rod"
+            "Ares Rod",
+            "Angler Rod",
         },
         ["Location Rods"] = {
             ["Fisherman Island"] = {"Starter Rod"},
             ["Kohana Volcano"] = {"Grass Rod", "Midnight Rod"},
             ["Tropical Grove"] = {"Astral Rod"},
-            ["Ancient Ruin"] = {"Element Rod", "Ghostfinn Rod"},
+            ["Ancient Ruin"] = {"Element Rod", "Ghostfinn Rod", "Angler Rod", "Ares Rod"},
         },
+        ["Endgame"] = "",
     },
 
     ["ExtremeFpsBoost"] = true,
@@ -141,6 +161,5 @@ _G.FishItConfig = _G.FishItConfig or {
 
     ["AutoReconnect"] = false,
     ["HideGUI"] = false,
-    ["Debug"] = false,
     ["EXIT_MAP_IF_DISCONNECT"] = true,
 }
