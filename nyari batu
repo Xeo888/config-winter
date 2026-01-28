@@ -147,8 +147,6 @@ _G.FishItConfig = _G.FishItConfig or {
             "Grass Rod",
             "Midnight Rod",
             "Astral Rod",
-            "Ares Rod",
-            "Angler Rod",
         },
         ["Location Rods"] = {
             ["Fisherman Island"] = {"Starter Rod"},
